@@ -41,7 +41,7 @@ function play() {
 
   if (randomLetter.value == true)
     letterIndex.value = Math.floor(Math.random() * viableLetters.length)
-  else if (letterIndex.value >= viableLetters.length) letterIndex.value = 0
+  else if (letterIndex.value == viableLetters.length-1) letterIndex.value = 0
   else letterIndex.value++
 
   countdown.value = timeAllowance
