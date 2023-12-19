@@ -22,9 +22,12 @@ setInterval(() => {
   }
 }, 1000)
 
+function randomizeGame() {
+  game.value = Object.keys(games)[Math.floor(Math.random() * Object.keys(games).length)]
+}
+
 function play() {
-  if (randomGame.value == true)
-    game.value = Object.keys(games)[Math.floor(Math.random() * Object.keys(games).length)]
+  if (randomGame.value == true) randomizeGame()
 
   const viableLetters =
     // @ts-ignore: 7053
@@ -44,6 +47,7 @@ function play() {
   showHints.value = false
 }
 
+randomizeGame()
 play()
 </script>
 
