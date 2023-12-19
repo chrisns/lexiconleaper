@@ -33,6 +33,8 @@ function randomizeGame() {
 function play() {
   if (randomGame.value == true) randomizeGame()
 
+  showHints.value = false
+
   const viableLetters =
     // @ts-ignore: 7053
     games[game.value].length > 0
@@ -46,7 +48,13 @@ function play() {
   else letterIndex.value++
 
   countdown.value = timeAllowance
-  showHints.value = false
+  // @ts-expect-error
+  gtag('event', 'play', {
+    game: game.value,
+    letter: playLetter.value,
+    randomGame: randomGame.value,
+    randomLetter: randomLetter.value
+  })
 }
 function reload() {
   location.reload()
