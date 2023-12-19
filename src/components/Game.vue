@@ -104,4 +104,8 @@ button {
   margin: 0.2rem;
   padding: 0.2rem;
 }
+#letter:hover,
+button:hover {
+  cursor: pointer;
+}
 </style>
