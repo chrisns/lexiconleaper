@@ -88,6 +88,9 @@ button {
 #letter {
   font-size: 20rem;
   text-align: center;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 #buttons {
   display: block;
