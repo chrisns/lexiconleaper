@@ -12,7 +12,9 @@ var letters = Array.from({ length: 26 }, (_, i) => String.fromCharCode(i + 97))
 
 const playLetter = computed(() => letters[letterIndex.value])
 // @ts-ignore: Unreachable code error
-const hints = computed(() => games[game.value].filter((item) => item.charAt(0).toLowerCase() == playLetter.value))
+const hints = computed(() =>
+  games[game.value].filter((item) => item.charAt(0).toLowerCase() == playLetter.value)
+)
 const showHints = ref(false)
 const timeAllowance = 10
 const countdown = ref(timeAllowance)

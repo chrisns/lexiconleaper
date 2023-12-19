@@ -5,6 +5,7 @@ import { RouterView } from 'vue-router'
 <template>
   <RouterView />
   <footer>
-    Made with ❤️ by <a target="_blank" href="https://cns.me">cns.me</a> | <a target="_blank" href="https://github.com/chrisns/lexiconleaper">GitHub</a>
+    Made with ❤️ by <a target="_blank" href="https://cns.me">cns.me</a> |
+    <a target="_blank" href="https://github.com/chrisns/lexiconleaper">GitHub</a>
   </footer>
 </template>
