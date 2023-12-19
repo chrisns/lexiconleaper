@@ -11,8 +11,8 @@ var letterIndex = ref(0)
 var letters = Array.from({ length: 26 }, (_, i) => String.fromCharCode(i + 97))
 
 const playLetter = computed(() => letters[letterIndex.value])
-// @ts-ignore: Unreachable code error
 const hints = computed(() =>
+// @ts-ignore: Unreachable code error
   games[game.value].filter((item) => item.charAt(0).toLowerCase() == playLetter.value)
 )
 const showHints = ref(false)
