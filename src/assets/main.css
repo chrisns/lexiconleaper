@@ -21,6 +21,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #537895;
   background: linear-gradient(to top, #184e95 0%, #537895 100%);
 }
 
