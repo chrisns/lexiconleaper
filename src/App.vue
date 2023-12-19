@@ -4,4 +4,7 @@ import { RouterView } from 'vue-router'
 
 <template>
   <RouterView />
+  <footer>
+    Made with ❤️ by <a href="https://cns.me">cns.me</a> | <a href="https://github.com/chrisns/lexiconleaper">GitHub</a>
+  </footer>
 </template>

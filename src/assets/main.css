@@ -23,3 +23,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(to top, #184e95 0%, #537895 100%);
 }
+
+footer {
+  margin-top: 3em;
+  color: white;
+  text-align: center;
+}
+
+footer a:active,
+footer a:visited,
+footer a:link {
+  color: white
+}
