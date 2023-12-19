@@ -75,7 +75,7 @@ randomizeGame()
       Random Letter
     </button>
     <button @click="reload">Restart</button>
-    <button @click="showHints = !showHints" :class="{ on: showHints }">Hints</button>
+    <button @click="showHints = !showHints" :class="{ on: showHints }">Show Answers</button>
     <button @click="showInstructions = !showInstructions" :class="{ on: showInstructions }">
       How to play
     </button>
@@ -99,7 +99,7 @@ randomizeGame()
       <a @click="randomGame = !randomGame">random category</a> and/or
       <a @click="randomLetter = !randomLetter">random letter</a> on each play
     </p>
-    <p>If you run out of ideas, you can <a @click="showHints = !showHints">show the hints</a></p>
+    <p>If you run out of ideas, you can <a @click="showHints = !showHints">show the answers</a></p>
   </div>
 </template>
 
